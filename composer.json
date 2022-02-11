@@ -1,0 +1,32 @@
+{
+    "name": "altwei/weather",
+    "description": "A weather SDK.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Altwei\\Weather\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "altwei",
+            "email": "j@altwei.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Altwei\\Weather\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.5"
+    }
+}
